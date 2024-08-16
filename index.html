@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>CookBook</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark pt-3">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">
+                CookBook
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#get" class="nav-link">What You Will Get</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#question" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#chef" class="nav-link">About Chef</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- NavBar End -->
+
+
+    <!-- ShowCase area -->
+    <section class="bg-dark text-light text-center p-5 text-sm-start">
+        <div class="container d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Become a Good Chef <br> With <span class="text-danger"> Our CookBook. </span> </h1>
+                <p class="pt-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perferendis id sapiente, iste
+                    aliquid omnis in aspernatur recusandae sunt quos?Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit.
+                </p>
+                <button class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#enroll">Get
+                    CookBook</button>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/cook.svg" alt="">
+        </div>
+    </section>
+
+    <!-- ShowCase area End -->
+
+    <!-- NewsLetter Section -->
+
+    <section class="bg-primary text-light p-4">
+        <div class="container d-md-flex justify-content-between align-items-center row">
+            <h2 class="mb-md-3 mb-sm-3 mb-lg-3">
+                Subscribe To our NewsLetter
+            </h2>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter Email">
+                <button class="btn btn-dark btn-lg text-light" type="button">Button</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NewsLetter Section End -->
+
+
+    <!-- Cards Start -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!-- Card 1 -->
+                <div class="col-md reveal">
+
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <h1>
+                                <i class="bi bi-youtube"></i>
+                            </h1>
+                            <h1>Youtube</h1>
+                            <p class="card-text mt-3 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit. Laudantium inventore maiores fugit iure facilis? Recusandae non accusamus corrupti
+                                ullam excepturi qui vero, incidunt inventore minima quos nobis ut voluptatibus velit.
+                            </p>
+                            <button class="btn btn-primary mt-3">To Youtube</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md reveal">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <h1>
+                                <i class="bi bi-instagram"></i>
+                            </h1>
+                            <h1>Instagram</h1>
+                            <p class="card-text mt-3 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit. Laudantium inventore maiores fugit iure facilis? Recusandae non accusamus corrupti
+                                ullam excepturi qui vero, incidunt inventore minima quos nobis ut voluptatibus velit.
+                            </p>
+                            <button class="btn btn-primary mt-3">To Instagram</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md reveal">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <h1>
+                                <i class="bi bi-tiktok"></i>
+                            </h1>
+                            <h1>TikTok</h1>
+                            <p class="card-text mt-3 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit. Laudantium inventore maiores fugit iure facilis? Recusandae non accusamus corrupti
+                                ullam excepturi qui vero, incidunt inventore minima quos nobis ut voluptatibus velit.
+                            </p>
+                            <button class="btn btn-primary mt-3">To TikTok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Cards End -->
+
+
+    <!-- In this cookbook -->
+
+    <section id="get" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md reveal">
+                    <img src="img/plate.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5 reveal">
+                    <h2>In This CookBook</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Similique deleniti possimus magnam corporis ratione facere!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                        quae similique laboriosam iste minus placeat odit velit quos,
+                        nulla architecto amet voluptates?
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End -->
+
+
+    <!-- Questions -->
+
+    <section class="p-5 bg-dark text-light" id="get">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5 reveal">
+                    <h2>Some insights on what you will get</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Similique deleniti possimus magnam corporis ratione facere!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                        quae similique laboriosam iste minus placeat odit velit quos,
+                        nulla architecto amet voluptates?
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+                <div class="col-md ml-4 reveal">
+                    <img src="img/food.webp" class="img-fluid" alt="" style="border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question End -->
+
+
+    <!-- Asked Question -->
+
+    <section>
+        <div class="container">
+            <h1 class="text-center m-5 reveal">Frequently Asked Questions</h1>
+            <div class="accordion accordion-flush mt-5 p-3" id="question">
+
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question1">
+                            What is the price of cookbook?
+                        </button>
+                    </h2>
+                    <div id="question1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            This is the first item's accordion body. It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style each element. These classes control the
+                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
+                            any of this with custom CSS or overriding our default variables. It's also worth noting that
+                            just about any HTML can go within the accordion-body, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question2">
+                            What recipes are in cookbook?
+                        </button>
+                    </h2>
+                    <div id="question2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            This is the second item's accordion body. It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style each element. These classes control the
+                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
+                            any of this with custom CSS or overriding our default variables. It's also worth noting that
+                            just about any HTML can go within the accordion-body, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question3">
+                            Will there be more cookbook in the future?
+                        </button>
+                    </h2>
+                    <div id="question3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            This is the third item's accordion body. It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style each element. These classes control the
+                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
+                            any of this with custom CSS or overriding our default variables. It's also worth noting that
+                            just about any HTML can go within the accordion-body, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End -->
+
+
+    <!-- Instructor Start -->
+
+    <section class="p-5 bg-primary mt-5" id="chef">
+        <div class="container">
+            <h2 class="text-center text-light mb-4 reveal">About Chef</h2>
+            <p class="text-center text-light lead mb-5 reveal">Our Chef have 5+ years of working experience in this industry
+            </p>
+
+            <div class="card bg-light reveal">
+                <div class="card-body text-center">
+                    <img src="https://randomuser.me/api/portraits/men/19.jpg" class="rounded-circle mb-3" alt="">
+                    <h3 class="cart-title ">John Doe</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi laudantium deleniti modi
+                        fuga harum illo, odit ducimus repellendus blanditiis maiores itaque quas velit doloremque
+                        perspiciatis officia accusantium nisi provident recusandae, ut dicta autem. Magnam cum sint
+                        libero ipsam, id unde error laboriosam. Repellendus necessitatibus ea qui veniam inventore
+                        sequi!
+                    </p>
+                    <div class="d-flex justify-content-center mx-4">
+                        <h1>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                        </h1>
+                        <h1>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                        </h1>
+                        <h1>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                        </h1>
+                        <h1>
+                            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End -->
+
+    <!-- Testimonails Start -->
+    <section id="chef" class="p-5 bg-light">
+        <div class="container reveal">
+            <h2 class="text-center text-dark mb-5">Testimonails</h2>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3 text-light">John Doe</h3>
+                            <p class="card-text text-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3 text-light text-light">Jane Doe</h3>
+                            <p class="card-text text-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3 text-light">Steve Smith</h3>
+                            <p class="card-text text-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3 text-light">Sara Smith</h3>
+                            <p class="card-text text-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer Start -->
+    <footer class="p-2 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024 CookBook</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-3 mx-4">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Model -->
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Get Your Hands On CookBook</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Just there!!!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="first-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="last-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
